@@ -1,39 +1,55 @@
-/* Intial setup for displaying things in center */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: center;
-  flex-wrap: wrap;
-  align-content: center;
-  font-family: "Open Sans", sans-serif;
-
-  background: linear-gradient(top, #222, #333);
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  margin: 0;
 }
 
-/* code starts here */
-
-.first-face {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+html,
+body,
+.container {
+  height: 100%;
 }
+
+.container {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+}
+
 .dice {
   padding: 4px;
-  background-color: tomato;
+  background-color: #8deeee;
   width: 104px;
   height: 104px;
   border-radius: 10%;
-  margin-right: 10px;
+  margin-right: 50px;
   cursor: pointer;
 }
+
 .dot {
   display: block;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: white;
+}
+
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .second-face {
